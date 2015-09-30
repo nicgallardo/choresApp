@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  h1 New Album
+
+  form(action="/chores", method="post")
+    div
+      Name
+      input(type="text" name="chores")
+
+    div
+      input(type="submit")

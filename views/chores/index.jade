@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+  h1 Chores
+  
+  a(href="/chores/new") New Chores
+  table
+    thead
+      tr
+        th ID
+        th Name
+    tbody
+      for chores in allChores
+        tr
+          td= chores._id
+          td= chores.name
